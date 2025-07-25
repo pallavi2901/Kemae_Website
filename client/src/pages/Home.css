@@ -1,0 +1,28 @@
+.auth-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px dashed #e91e63;
+  border-radius: 12px;
+  background: #fff0f5;
+}
+
+.questions-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.questions-section h2 {
+  color: #880e4f;
+  margin-bottom: 1rem;
+}
+
+.questions-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.questions-section li {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  color: #444;
+}

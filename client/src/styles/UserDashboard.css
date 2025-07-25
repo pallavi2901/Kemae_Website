@@ -1,0 +1,237 @@
+.dashboard-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff3f6, #f0faff);
+  min-height: 100vh;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e91e63;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.product-card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dashboard-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.theme-switch input:checked + .slider {
+  background-color: #4b0082;
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Dark Theme Styles */
+.dashboard-container.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dashboard-container.dark .product-card {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+.user-info span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* Light Theme (Default) */
+.dashboard-container.light {
+  background: #fff;
+  color: #333;
+}
+.dashboard-container.light .product-card {
+  background: #ffe4e1;
+}
+
+/* Dark Theme */
+.dashboard-container.dark {
+  background: #111;
+  color: #fff;
+}
+.dashboard-container.dark .product-card {
+  background: #f81967;
+}
+
+/* Header and Controls */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.dashboard-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Theme Toggle Switch */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: .4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+.theme-switch input:checked + .slider {
+  background-color: #fa2992;
+}
+.theme-switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Product Cards */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.product-card {
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+/* Profile Dropdown */
+.profile-container {
+  position: relative;
+}
+.profile-button {
+  padding: 0.5rem 1rem;
+  background-color: #f79fc0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.profile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  width: 180px;
+  z-index: 10;
+}
+.dashboard-container.dark .profile-menu {
+  background-color: #222;
+  color: #fff;
+}
+.profile-menu li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+.profile-menu li:hover {
+  background-color: #f8bbd0;
+}

@@ -1,0 +1,115 @@
+.verify-admin-form {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fffafc;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.verify-admin-form input,
+.verify-admin-form select {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+}
+
+.verify-admin-form button {
+  background: #e91e63;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.verify-admin-form button:hover {
+  background: #d81b60;
+}
+.verify-admin-form {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.verify-admin-form h2 {
+  margin-bottom: 1.5rem;
+  color: #3c3c3c;
+}
+
+.verify-admin-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.verify-admin-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.verify-admin-form button:hover {
+  background-color: #0056b3;
+}
+.verify-admin-form {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fdfdfd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.verify-admin-form h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.step-form input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.step-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.step-form button:hover {
+  background-color: #256cd1;
+}

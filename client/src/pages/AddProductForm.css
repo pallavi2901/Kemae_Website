@@ -1,0 +1,61 @@
+body {
+  background: linear-gradient( #f8f39b, #f27598);
+}
+
+
+.add-product-form {
+  max-width: 500px;
+  margin: 3rem auto;
+  background: #fff0f6;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.add-product-form h2 {
+  text-align: center;
+  color: #e91e63;
+  margin-bottom: 1.5rem;
+}
+
+.add-product-form input,
+.add-product-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #f48fb1;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+  border-color: #ec407a;
+  box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.1);
+}
+
+.add-product-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-product-form button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-form button:hover {
+  background-color: #d81b60;
+}
